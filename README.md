@@ -4,7 +4,7 @@
 
 ### TODO
 - [x] Shadow Caster
-- [ ] Fix ShadowCollector
+- [ ] Shadow Collector
 - [ ] Quality Setting
 - [ ] CSM(Cascade Shadow Map)
 - [ ] Soft Shadow
