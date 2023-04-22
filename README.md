@@ -28,3 +28,6 @@ Light Depth Texture
 
 Shadow Map
 ![shadow-map](/Screenshots/shadow_map.png)
+
+Result
+![result](/Screenshots/result.png)
