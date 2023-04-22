@@ -2,8 +2,6 @@
 
 > Unity 2021.3.20f1
 
-### Author's 
-
 I currently don't have a deep understanding of SSSM, so I will supplement my notes when more detailed shadows can be rendered later.
 
 ### Questions
@@ -13,9 +11,9 @@ I currently don't have a deep understanding of SSSM, so I will supplement my not
 ### TODO
 - [x] Shadow Caster
 - [x] Shadow Collector
-- [ ] Display shadow-map
-- [ ] Quality Setting
+- [x] Display shadow-map
+- [ ] Shadow Quality
 - [ ] CSM(Cascade Shadow Map)
-- [ ] Soft Shadow
 - [ ] Point Light
 - [ ] Spot Light
+- [ ] Soft Shadow
