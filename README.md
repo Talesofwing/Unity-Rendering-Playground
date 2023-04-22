@@ -8,8 +8,6 @@ I currently don't have a deep understanding of SSSM, so I will supplement my not
 
 1. How to make the camera cover the entire scene and obtain a high-quality shadow-map in the case of directional light source.
 
--[](/Screenshots/camera_depth_tex.png)
-
 ### TODO
 - [x] Shadow Caster
 - [x] Shadow Collector
@@ -19,3 +17,14 @@ I currently don't have a deep understanding of SSSM, so I will supplement my not
 - [ ] Point Light
 - [ ] Spot Light
 - [ ] Soft Shadow
+
+### Results
+
+Camera Depth Texture
+![camera-depth](/Screenshots/camera_depth_tex.png)
+
+Light Depth Texture
+![light-depth](/Screenshots/light_depth_tex.png)
+
+Shadow Map
+![shadow-map](/Screenshots/shadow_map.png)
