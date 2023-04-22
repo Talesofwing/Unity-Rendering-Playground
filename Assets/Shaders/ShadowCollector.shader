@@ -55,10 +55,9 @@ Shader "zer0/Shadow Collector"  {
 				fixed depth = light_pos.z / light_pos.w;
 				depth = 1 - depth;		// Reversed-Z [1, 0] -> [0, 1]
 
-				fixed4 col = tex2D(_LightDepthTex, uv);
-				fixed sampleDepth = col.r;
+				fixed light_depth = tex2D(_LightDepthTex, uv).r;
 
-				fixed shadow = (sampleDepth < depth - 0.05) ? 0.1 : 1;
+				fixed shadow = (light_depth < depth - 0.05) ? 0 : 1;
 
 				return shadow;
 			}
