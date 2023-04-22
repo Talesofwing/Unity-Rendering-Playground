@@ -67,8 +67,6 @@ public class ScreenSpaceShadowMapping : MonoBehaviour {
 		_shadowCollectorMat.SetTexture (c_Shader_Key_Camera_Depth_Texture, _cameraDepthTexture);
 		_shadowCollectorMat.SetTexture (c_Shader_Key_Light_Depth_Texture, _lightDepthTextures[0]);
 		Graphics.Blit (_cameraDepthTexture, _sssm, _shadowCollectorMat);
-
-
 	}
 
 	/// <summary>
