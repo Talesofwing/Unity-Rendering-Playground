@@ -1,5 +1,7 @@
 # Cubemap-Skybox
 
+This project implements the manual rendering of `Cubemap`, `Cubemap` sampling, and `Skybox`.
+
 There are many detailed explanations of `Cubemap` and the principles of sampling `Cubemap` available online, so there is no need to go into detail here.
 
 I encountered a lot of problems during implementation, and the most troublesome one was how to fill the `RenderTexture` into the `Cubemap`.
@@ -13,6 +15,11 @@ After rendering 6 `RenderTextures` with 6 cameras, they are transformed into `Te
     - Since `Cubemap.SetPixels()` already automatically swaps left and right, there is no need to handle it manually.
 
 Also, if you want to use the generated `Texture2D`, you need to flip it horizontally again when generating the `Texture2D` so that it can be used for `Cubemap`.
+
+## Usage
+- Click on `zer0/Render Cubemap` in the toolbar
+- Select `Cubemap` to render into
+- Click `Render` button
 
 
 ## References
