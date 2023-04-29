@@ -21,6 +21,7 @@ Also, if you want to use the generated `Texture2D`, you need to flip it horizont
 - Select `Cubemap` to render into
 - Click `Render` button
 
+`Reference_Cubemap` is a `Cubemap` generated using `Camera.RenderToCubemap()`.
 
 ## References
 
