@@ -7,7 +7,7 @@ public class RendererWizard : ScriptableWizard {
 	[SerializeField] private Transform _root;
 	[SerializeField] private Cubemap _cubemap;
 	[SerializeField] private bool _saveTexture = true;
-	[SerializeField] private string _savePath = "Textures/Cubemap";
+	[SerializeField] private string _savePath = "Cubemap-Skybox/Textures/Cubemap";
 	[SerializeField] private string _textureName = "Cubemap";
 
 	[Header ("Render Properties")]
