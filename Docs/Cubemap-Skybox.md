@@ -21,7 +21,7 @@ Also, if you want to use the generated `Texture2D`, you need to flip it horizont
 - `Assets/Shaders/Skybox.shader`
     - Custom Skybox Shader。
 - `Assets/Shaders/Reflection.shader`
-    - Cuttom Reflection Shader。
+    - Custom Reflection Shader。
 
 ## Usage
 - Click on `zer0/Render Cubemap` in the toolbar
