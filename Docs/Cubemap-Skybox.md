@@ -16,12 +16,23 @@ After rendering 6 `RenderTextures` with 6 cameras, they are transformed into `Te
 
 Also, if you want to use the generated `Texture2D`, you need to flip it horizontally again when generating the `Texture2D` so that it can be used for `Cubemap`.
 
+## Introducation
+
+- `Assets/Shaders/Skybox.shader`
+    - Custom Skybox Shader。
+- `Assets/Shaders/Reflection.shader`
+    - Cuttom Reflection Shader。
+
 ## Usage
 - Click on `zer0/Render Cubemap` in the toolbar
 - Select `Cubemap` to render into
+- Select `Transform` as camera position. If it is null, use `(0, 0, 0)` as the camera position.
 - Click `Render` button
 
 `Reference_Cubemap` is a `Cubemap` generated using `Camera.RenderToCubemap()`.
+
+## Conclusion
+I originally wanted to customise the rendering process of the `Skybox`, but I gave up for now because I'm not familiar with Unity's rendering commands. I'll come back to it later.
 
 ## References
 

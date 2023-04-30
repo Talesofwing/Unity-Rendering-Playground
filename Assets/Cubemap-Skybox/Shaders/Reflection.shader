@@ -1,4 +1,4 @@
-Shader "zer0/Reflection" {
+Shader "zer0/Cubemap-Skybox/Reflection" {
 
     Properties {
         _Color ("Color Tint", Color) = (1, 1, 1, 1)
