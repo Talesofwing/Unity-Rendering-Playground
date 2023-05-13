@@ -1,0 +1,74 @@
+root = true
+
+[*]
+end_of_line = crlf
+insert_final_newline = true															# 在文件尾部加入一行空白行
+
+[*.cs]
+indent_style = space
+indent_size = 4
+#tab_width = 4
+charset = utf-8-bom
+
+trim_trailing_whitespace = true
+
+
+dotnet_sort_system_directives_first = true											# 在使用using時，將System命名空間放到最前
+
+dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = false
+
+dotnet_style_object_initializer = true:suggestion                                   # 是否簡化object的初始化
+dotnet_style_collection_initializer = true:suggestion                               # 是否簡化collection的初始化
+dotnet_style_explicit_tuple_names = true:suggestion                                 # 是否簡化tuple的名字
+dotnet_style_null_propagation = true:suggestion                                     # 是否使用null判斷符(即"?")
+dotnet_style_coalesce_expression = true:warning                                     # 是否使用"??"判斷符
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion  # 是否使用"is null"代替"== null"
+dotnet_style_prefer_inferred_tuple_names = true:suggestion                          # 是否使用隱式的tuple的名字
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion          # 推斷匿名類型成員的名稱
+dotnet_style_prefer_auto_properties = true:silent                                   # 是否使用自動屬性
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent            # 是否建議使用三元運算符
+dotnet_style_prefer_conditional_expression_over_return = true:silent                # 是否建議使用簡短的條件判斷
+
+###############################
+# C# Formatting Rules         #
+###############################
+# New line preferences
+csharp_new_line_before_open_brace = false                                           # 花括號前是否需切換新行
+csharp_new_line_before_else = false                                                 # else前是否需切換新行
+csharp_new_line_before_catch = false                                                # catch前是否需切換新行
+csharp_new_line_before_finally = false                                              # finally前是否需切換新行
+csharp_new_line_before_members_in_object_initializers = false                       # 初始化object時，每個成員變量的初始化是否需要切換新行
+csharp_new_line_before_members_in_anonymous_types = false                           # 初始化匿名類型時，每個成員變量的初始化是否需要切換新行
+csharp_new_line_between_query_expression_clauses = true                             # 使用LINQ查詢表達式時，是否插入換行符
+# Indentation preferences
+csharp_indent_case_contents = true                                                  # switch...case...的內容是否加入tab
+csharp_indent_switch_labels = true                                                  # swtich的case是否加入tab
+csharp_indent_labels = one_less_than_current                                        # 標簽(tag:)的tab設置 flush_left | one_less_than_current | no_change
+# Space preferences
+csharp_space_after_cast = false														# 類型轉換後是否有空格
+csharp_space_before_comma = false                                                   # 在,前是否加入空格
+csharp_space_after_comma = true                                                     # 在,後是否加入空格
+csharp_space_between_method_declaration_name_and_open_parenthesis = true            # 方法名字後是否加入空格   
+csharp_space_after_keywords_in_control_flow_statements = true						# 控制流語句(if, for...)關鍵字後是否有空格
+csharp_space_between_method_call_parameter_list_parentheses = false					# 調用方法時，參數兩旁是否有空格
+csharp_space_between_method_declaration_parameter_list_parentheses = false			# 定義方法時，參數兩旁是否有空格
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false	# 定義方法時，無參數是否有空格
+csharp_space_between_method_call_empty_parameter_list_parentheses = false			# 調用方法時，無參數是否有空格
+csharp_space_between_method_call_name_and_opening_parenthesis = true				# 調用方法時，方法名字與括號之間是否有空格
+csharp_space_between_parentheses = true												# 待確定
+csharp_space_before_colon_in_inheritance_clause = true								# 繼承符號前是否有空格
+csharp_space_after_colon_in_inheritance_clause = true								# 繼承符號後是否有空格
+# Wrapping preferences
+csharp_preserve_single_line_statements = true                                       # 是否允許單行代碼
+csharp_preserve_single_line_blocks = true                                           # 是否允許單行塊
+
+##### Naming Rules #####
+
+dotnet_naming_style.pascal_case_style.capitalization              = pascal_case
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.constant_fields.applicable_kinds            = field
+dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
+dotnet_naming_symbols.constant_fields.required_modifiers          = const
