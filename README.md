@@ -4,6 +4,10 @@
 
 This project is a playground for Unity Rendering.
 
+## TODO
+- [ ] [DepthOfField](Docs/ImageEffects/DepthOfField.md)
+- [ ] [EdgeOutline](Docs/ImageEffects/EdgeOutline.md)
+
 ## Contents
 - **[New]** [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
 - **[New]** [Cubemap-Skybox](Docs/Cubemap-Skybox.md)
