@@ -14,8 +14,8 @@ However, as shown in the figure, the effect is not as good as expected. When the
 
 The result will be good for continuous meshes like Sphere.
 
-![01](/Imgs/ImageEffects/Outline/outline_based_Normal_01.png)
+![01](/Imgs/ImageEffects/Outline/outline_based_normal_01.png)
 
 Separation phenomenon will occur for non-continuous meshes like Cube.
 
-![02](/Imgs/ImageEffects/Outline/outline_based_Normal_02.png)
+![02](/Imgs/ImageEffects/Outline/outline_based_normal_02.png)
