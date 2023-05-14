@@ -91,4 +91,5 @@ Shader "zer0/ImageEffects/Outline Based Convolution" {
 
     }
 
+    FallBack Off
 }
