@@ -11,10 +11,10 @@ In this project, the Outline rendering for the specified layer is implemented. B
     
     In the 9-grid, if color values are sampled, the processed pixel will be rendered with the outline color.
 
-    ![01](/Imgs/ImageEffects/Outline/outline_layer_01.png)
+    ![01](/Imgs/ImageEffects/Outline/outline_based_convolution_01.png)
 
     In the 9-grid, if there is no color sampled, the pixel being processed will be rendered with the original texture color.
     
-    ![02](/Imgs/ImageEffects/Outline/outline_layer_02.png)
+    ![02](/Imgs/ImageEffects/Outline/outline_based_convolution_02.png)
 
 It's actually a type of convolution application. Other convolution kernels can be used to achieve this effect.
