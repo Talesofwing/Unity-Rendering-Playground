@@ -3,7 +3,7 @@
 ## Introducation
 In this project, the Outline rendering for the specified layer is implemented. By setting the `Layer` of the `GameObject` to `Outline`, it will be automatically rendered.
 
-![result](/Imgs/ImageEffects/Outline/outline_Based_Convolution_result.png)
+![result](/Imgs/ImageEffects/Outline/outline_based_convolution_result.png)
 
 ## Principle
 1. Use a new camera to render the objects of the specified layer (Outline). Use `Camera.RenderWithShader(shader, "")`. A simple shader is preferred at this step because we only want to render a texture to indicate which pixels are covered by objects on this layer.
