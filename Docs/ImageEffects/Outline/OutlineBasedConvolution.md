@@ -1,4 +1,4 @@
-# OutlineLayer
+# OutlineBasedConvolution
 
 ## Introducation
 In this project, the Outline rendering for the specified layer is implemented. By setting the `Layer` of the `GameObject` to `Outline`, it will be automatically rendered.

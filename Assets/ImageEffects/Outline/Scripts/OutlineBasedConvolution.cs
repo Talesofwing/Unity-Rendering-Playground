@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OutlineLayer : BaseImageEffect {
+public class OutlineBasedConvolution : BaseImageEffect {
     [SerializeField] private Shader _drawOccupyShader;
     [SerializeField] private Camera _extraCamera;
     [SerializeField] private Color _edgeColor;
