@@ -18,6 +18,3 @@ In this project, the Outline rendering for the specified layer is implemented. B
     ![02](/Imgs/ImageEffects/Outline/outline_layer_02.png)
 
 It's actually a type of convolution application. Other convolution kernels can be used to achieve this effect.
-
-## References
-Please go back to [Outline](../Outline.md) for details.
