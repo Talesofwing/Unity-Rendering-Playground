@@ -4,6 +4,7 @@
 This project implements Outline rendering using various methods, including:
 
 1. [Outline-Based-Convolution](Outline/OutlineBasedConvolution.md)
+2. [Outline-Based-Normal](Outline/OutlineBasedNormal.md)
 
 ## References
 1. [CSDN-指定layer的外轮廓渲染](https://blog.csdn.net/l773575310/article/details/78701756)
