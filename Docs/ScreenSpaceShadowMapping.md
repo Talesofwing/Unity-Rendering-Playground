@@ -19,13 +19,13 @@ I currently don't have a deep understanding of SSSM, so I will supplement my not
 ### Results
 
 Camera Depth Texture
-![camera-depth](/Screenshots/camera_depth_tex.png)
+![camera-depth](/Imgs/Shadow/camera_depth_tex.png)
 
 Light Depth Texture
-![light-depth](/Screenshots/light_depth_tex.png)
+![light-depth](/Imgs/Shadow/light_depth_tex.png)
 
 Shadow Map
-![shadow-map](/Screenshots/shadow_map.png)
+![shadow-map](/Imgs/Shadow/shadow_map.png)
 
 Result
-![result](/Screenshots/result.png)
+![result](/Imgs/Shadow/result.png)
