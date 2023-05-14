@@ -4,8 +4,11 @@ public class OutlineLayer : BaseImageEffect {
     [SerializeField] private Shader _drawOccupyShader;
     [SerializeField] private Camera _extraCamera;
     [SerializeField] private Color _edgeColor;
+    [SerializeField] private Color _backgroundColor;
     [Range (3, 10)]
     [SerializeField] private int _edgeSize = 6;
+    [Range (0, 1)]
+    [SerializeField] private float _edgeFactor = 0;     // 0: display all, 1: only edge with background color
 
     private GameObject _lastGo;
 
@@ -71,7 +74,9 @@ public class OutlineLayer : BaseImageEffect {
 
             Mat.SetTexture ("_OutlineTex", rt);
             Mat.SetColor ("_EdgeColor", _edgeColor);
+            Mat.SetColor ("_BackgroundColor", _backgroundColor);
             Mat.SetInt ("_EdgeSize", _edgeSize);
+            Mat.SetFloat ("_EdgeFactor", _edgeFactor);
 
             Graphics.Blit (src, dest, Mat);
 
