@@ -21,4 +21,4 @@ This project is a playground for Unity Rendering.
 - **[NEW]** [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
 - **[NEW]** [Cubemap-Skybox](Docs/Cubemap-Skybox.md)
 - **[NEW]** [VertexAnimation-Grass](Docs/VertexAnimation/Grass.md)
-- **[NEW]** [RampTexture](Docs/TextureEffect/RampTexture.md)
+- **[NEW]** [RampTexture](Docs/TexEffects/RampTexture.md)
