@@ -6,8 +6,10 @@ This project is a playground for Unity Rendering.
 
 ## TODO
 - [ ] [DepthOfField](Docs/ImageEffects/DepthOfField.md)
-- [ ] [Outline](Docs/ImageEffects/Outline.md)
 - [ ] [ScreenSpaceAmbientOcclusion](Docs/ImageEffects/SSAO.md)
+
+## Doing
+- [ ] [Outline](Docs/ImageEffects/Outline.md)
 
 ## Contents
 - **[New]** [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
