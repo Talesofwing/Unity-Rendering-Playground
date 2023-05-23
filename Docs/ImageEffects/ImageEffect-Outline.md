@@ -1,10 +1,20 @@
-# Outline
+# ImageEffect - Outline
 
 ## Introducation
 This project implements Outline rendering using various methods, including:
 
 1. [Outline-Based-Convolution](Outline/OutlineBasedConvolution.md)
 2. [Outline-Based-Normal](Outline/OutlineBasedNormal.md)
+
+There are many methods for rendering Outline. In the book "Real Time Rendering, third edition", the author categorizes these methods into five types:
+
+- Outline rendering based on viewing angle and surface normal
+- Outline rendering based on procedural geometry 
+- Outline rendering based on image processing
+- Outline rendering based on edge detection
+- Mixing several rendering methods mentioned above
+
+More detailed information can be found in the book.
 
 ## References
 1. [CSDN-指定layer的外轮廓渲染](https://blog.csdn.net/l773575310/article/details/78701756)
