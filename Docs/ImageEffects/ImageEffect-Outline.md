@@ -16,6 +16,10 @@ There are many methods for rendering Outline. In the book "Real Time Rendering, 
 
 More detailed information can be found in the book.
 
+## Other
+
+This project is based on screen post-processing and also implements an Outline Shader that can be directly applied to objects. You can find it in `Assets/Outline`.
+
 ## References
 1. [CSDN-指定layer的外轮廓渲染](https://blog.csdn.net/l773575310/article/details/78701756)
 2. [CSDN-对物体网格顶点的外扩](https://blog.csdn.net/l773575310/article/details/78714406)

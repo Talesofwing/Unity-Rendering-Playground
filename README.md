@@ -9,7 +9,8 @@ This project is a playground for Unity Rendering.
 - [ ] [ScreenSpaceAmbientOcclusion](Docs/ImageEffects/SSAO.md)
 
 ## Doing
-- [ ] [Outline](Docs/ImageEffects/Outline.md)
+- [ ] [ImageEffect-Outline](Docs/ImageEffects/Outline.md)
+- [ ] [Outline Shader](Docs/Outline/OutlineBasedNormal.md)
 
 ## Contents
 - **[New]** [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
