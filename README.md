@@ -7,13 +7,18 @@ This project is a playground for Unity Rendering.
 ## TODO
 - [ ] [DepthOfField](Docs/ImageEffects/DepthOfField.md)
 - [ ] [ScreenSpaceAmbientOcclusion](Docs/ImageEffects/SSAO.md)
+- [ ] Toon Shading
 
 ## Doing
 - [ ] [ImageEffect-Outline](Docs/ImageEffects/Outline.md)
 - [ ] [Outline Shader](Docs/Outline/OutlineBasedNormal.md)
 
+## Big Targets
+- [ ] Analyzing the rendering of Genshin Impact!!
+- [ ] Analyzing the rendering of zelda!!
+
 ## Contents
-- **[New]** [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
-- **[New]** [Cubemap-Skybox](Docs/Cubemap-Skybox.md)
-- **[New]** [VertexAnimation-Grass](Docs/VertexAnimation/Grass.md)
+- **[NEW]** [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
+- **[NEW]** [Cubemap-Skybox](Docs/Cubemap-Skybox.md)
+- **[NEW]** [VertexAnimation-Grass](Docs/VertexAnimation/Grass.md)
 - **[NEW]** [RampTexture](Docs/TextureEffect/RampTexture.md)
