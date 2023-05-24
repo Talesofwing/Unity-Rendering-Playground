@@ -6,6 +6,8 @@ The article mentioned in the Reference is in Chinese, but not to worry, I will e
 
 In essence, the approach involves using two passes. The first pass renders the stencil and performs the regular rendering of the objects. In this example, the `ForwardAdd` is not included. The second pass expands the vertices based on their normals. It then checks whether the Stencil texture value exists for each pixel. If the Stencil texture value exists, it means that the pixel is not an edge and can be discarded through the Stencil Test. As a result, only the edges are rendered.
 
+Additionally, it is important to note that these renderings need to explicitly occur after the `Geometry`. Therefore, in this example, the `Queue` for these renderings should be set to `Geometry + 1` and `Geometry + 2` respectively.
+
 The vertex extrusion in this example is implemented using two methods:
 - Calculation in model space, which results in the issue of exaggeration of the near and diminishing of the far
 - Calculation in view space, which resolves the issue of exaggeration but may have a certain impact on performance
