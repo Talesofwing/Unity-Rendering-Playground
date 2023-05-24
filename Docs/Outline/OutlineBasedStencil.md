@@ -1,5 +1,7 @@
 # OutlineBasedStencil
 
+Before diving into this example, it is important to understand what `Stencil` is. Here is a [reference](https://learnopengl.com/Advanced-OpenGL/Stencil-testing) resource to help you.
+
 The article mentioned in the Reference is in Chinese, but not to worry, I will explain the principle clearly here.
 
 In essence, the approach involves using two passes. The first pass renders the stencil and performs the regular rendering of the objects. In this example, the `ForwardAdd` is not included. The second pass expands the vertices based on their normals. It then checks whether the Stencil texture value exists for each pixel. If the Stencil texture value exists, it means that the pixel is not an edge and can be discarded through the Stencil Test. As a result, only the edges are rendered.
