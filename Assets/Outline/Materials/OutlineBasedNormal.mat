@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OutlineBasedNormal_Black
+  m_Name: OutlineBasedNormal
   m_Shader: {fileID: 4800000, guid: dfc4eebad6196e04cb16848e8fc8d31d, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
