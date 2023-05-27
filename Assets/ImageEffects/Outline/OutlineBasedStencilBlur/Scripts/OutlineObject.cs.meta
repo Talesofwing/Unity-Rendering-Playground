@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b6242124eabdf3543b587e22d18fe58b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _stencilMat: {fileID: 2100000, guid: 991eeb5f1bb807a46abf6a2551a6624f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
