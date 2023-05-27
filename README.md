@@ -11,7 +11,7 @@ This project is a playground for Unity Rendering. Currently, the project is stil
 - [ ] Toon Shading
 
 ## Doing
-- [ ] [ImageEffect-Outline](Docs/ImageEffects/Outline.md)
+- [ ] [ImageEffect-Outline](Docs/ImageEffects/ImageEffect-Outline.md)
 - [ ] [Outline](Docs/Outline/Outline.md)
 
 ## Big Targets
