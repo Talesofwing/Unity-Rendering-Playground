@@ -2,7 +2,7 @@
 
 > Unity 2021.3.20f1
 
-This project is a playground for Unity Rendering.
+This project is a playground for Unity Rendering. Currently, the project is still using the Built-In Pipeline, but there are plans to transition to using the Scriptable Render Pipeline (SRP) in the future.
 
 ## TODO
 - [ ] Import SRP
@@ -12,7 +12,7 @@ This project is a playground for Unity Rendering.
 
 ## Doing
 - [ ] [ImageEffect-Outline](Docs/ImageEffects/Outline.md)
-- [ ] [Outline Shader](Docs/Outline/OutlineBasedNormal.md)
+- [ ] [Outline](Docs/Outline/Outline.md)
 
 ## Big Targets
 - [ ] Analyzing the rendering of Genshin Impact!!
