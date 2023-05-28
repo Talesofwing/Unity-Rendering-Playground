@@ -21,7 +21,7 @@ More detailed information can be found in the book.
 
 There are various methods for rendering Outline, each with its own advantages and disadvantages. Currently, I has not found a universal algorithm for Outline rendering. Depending on the requirements, different implementation approaches can be chosen.
 
-This project is based on screen post-processing and also implements an Outline Shader that can be directly applied to objects. You can find it in `Assets/Outline` or refer to the documentation in [Outline](/Docs/Outline/Outline.md) for more information.
+This project is based on screen post-processing and also implements an Outline Shader that can be directly applied to objects. You can find it in `Assets/Outline` or refer to the documentation in [Outline](/Docs/Outlines/Outline.md) for more information.
 
 ## References
 1. [CSDN-指定layer的外轮廓渲染](https://blog.csdn.net/l773575310/article/details/78701756)
