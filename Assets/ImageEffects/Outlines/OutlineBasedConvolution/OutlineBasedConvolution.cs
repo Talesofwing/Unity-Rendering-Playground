@@ -5,12 +5,12 @@ namespace ImageEffects.Outlines {
     public class OutlineBasedConvolution : BaseImageEffect {
         [SerializeField] private Shader _drawOccupyShader;
         [SerializeField] private Camera _extraCamera;
-        [SerializeField] private Color _edgeColor;
+        [SerializeField] private Color _outlineColor;
         [SerializeField] private Color _backgroundColor;
         [Range (3, 10)]
-        [SerializeField] private int _edgeSize = 6;
+        [SerializeField] private int _outlineSize = 6;
         [Range (0, 1)]
-        [SerializeField] private float _edgeFactor = 0;     // 0: display all, 1: only edge with background color
+        [SerializeField] private float _outlineFactor = 0;     // 0: display all, 1: only outline with background color
 
         private GameObject _lastGo;
 
@@ -75,10 +75,10 @@ namespace ImageEffects.Outlines {
                 ExtraCamera.RenderWithShader (_drawOccupyShader, "");
 
                 Mat.SetTexture ("_OutlineTex", rt);
-                Mat.SetColor ("_EdgeColor", _edgeColor);
+                Mat.SetColor ("_OutlineColor", _outlineColor);
                 Mat.SetColor ("_BackgroundColor", _backgroundColor);
-                Mat.SetInt ("_EdgeSize", _edgeSize);
-                Mat.SetFloat ("_EdgeFactor", _edgeFactor);
+                Mat.SetInt ("_OutlineSize", _outlineSize);
+                Mat.SetFloat ("_OutlineFactor", _outlineFactor);
 
                 Graphics.Blit (src, dest, Mat);
 

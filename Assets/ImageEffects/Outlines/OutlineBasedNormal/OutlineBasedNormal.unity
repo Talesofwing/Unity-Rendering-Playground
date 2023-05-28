@@ -588,8 +588,8 @@ MonoBehaviour:
   _shader: {fileID: 4800000, guid: 5a79397f94be5fa4f8626b934149ec65, type: 3}
   _drawOccupyShader: {fileID: 4800000, guid: c260c779223613f4bb655b865c1cd6d2, type: 3}
   _extraCamera: {fileID: 1905400675}
-  _edgeColor: {r: 1, g: 0.4, b: 0, a: 1}
-  _edgeSize: 0.05
+  _OutlineColor: {r: 1, g: 0.4918583, b: 0, a: 1}
+  _OutlineSize: 0.05
   _outlineGos:
   - {fileID: 376758333}
   - {fileID: 943421810}

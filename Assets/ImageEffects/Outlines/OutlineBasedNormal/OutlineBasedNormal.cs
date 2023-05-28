@@ -5,14 +5,14 @@ namespace ImageEffects.Outlines {
     public class OutlineBasedNormal : BaseImageEffect {
         [SerializeField] private Shader _drawOccupyShader;
         [SerializeField] private Camera _extraCamera;
-        [SerializeField] private Color _edgeColor;
-        [SerializeField] private float _edgeSize = 6;
+        [SerializeField] private Color _OutlineColor;
+        [SerializeField] private float _OutlineSize = 0.05f;
         [SerializeField] private GameObject[] _outlineGos;
 
         private void Update () {
             if (_outlineGos != null && _outlineGos.Length > 0) {
-                Mat.SetFloat ("_EdgeSize", _edgeSize);
-                Mat.SetColor ("_EdgeColor", _edgeColor);
+                Mat.SetFloat ("_OutlineSize", _OutlineSize);
+                Mat.SetColor ("_OutlineColor", _OutlineColor);
                 for (int i = 0; i < _outlineGos.Length; ++i) {
                     Mesh mesh;
                     if (_outlineGos[i].GetComponent<MeshFilter> () != null) {

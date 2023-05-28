@@ -2,8 +2,8 @@ Shader "zer0/Outlines/Outline Based Stencil" {
     
     Properties {
         _MainTex ("Texture", 2D) = "white" {}
-        _EdgeColor ("Edge Color", Color) = (0, 1, 0, 1)
-        _EdgeSize ("Edge Size", Int) = 4
+        _OutlineColor ("Outline Color", Color) = (0, 1, 0, 1)
+        _OutlineSize ("Outline Size", Int) = 4
     }
 
     SubShader {
@@ -23,8 +23,8 @@ Shader "zer0/Outlines/Outline Based Stencil" {
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
-            fixed4 _EdgeColor;
-            float _EdgeSize;
+            fixed4 _OutlineColor;
+            float _OutlineSize;
 
             struct a2v {
                 float4 vertex : POSITION;
@@ -67,8 +67,8 @@ Shader "zer0/Outlines/Outline Based Stencil" {
             #include "UnityCG.cginc"
 
             fixed4 _Color;
-            fixed4 _EdgeColor;
-            float _EdgeSize;
+            fixed4 _OutlineColor;
+            float _OutlineSize;
 
             struct a2v {
                 float4 vertex : POSITION;
@@ -87,7 +87,7 @@ Shader "zer0/Outlines/Outline Based Stencil" {
 
                 // Calculating in the model space can cause the problem of
                 // exaggerating the near and diminishing the far
-                i.vertex.xyz += i.normal * _EdgeSize;
+                i.vertex.xyz += i.normal * _OutlineSize;
                 o.pos = UnityObjectToClipPos (i.vertex);
 
                 // Calculates in the view space
@@ -95,13 +95,13 @@ Shader "zer0/Outlines/Outline Based Stencil" {
                 // o.pos = UnityObjectToClipPos (i.vertex);
                 // fixed3 vNormal = normalize (mul ((float3x3)UNITY_MATRIX_IT_MV, i.normal));
                 // fixed2 pNormal = TransformViewToProjection (vNormal.xy);
-                // o.pos.xy += pNormal * _EdgeSize;
+                // o.pos.xy += pNormal * _OutlineSize;
 
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_TARGET {
-                return _EdgeColor;
+                return _OutlineColor;
             }
 
             ENDCG

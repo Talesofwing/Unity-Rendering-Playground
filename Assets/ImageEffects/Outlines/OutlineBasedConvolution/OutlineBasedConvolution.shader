@@ -3,10 +3,10 @@ Shader "zer0/Image Effects/Outlines/Outline Based Convolution" {
     Properties {
         _MainTex ("Main Texture", 2D) = "black" {}
         _OutlineTex ("Outline Texture", 2D) = "black" {}
-        _EdgeColor ("Edge Color", Color) = (0, 1, 0, 1)
+        _OutlineColor ("Outline Color", Color) = (0, 1, 0, 1)
         _BackgroundColor ("Background Color", Color) = (0, 0, 0, 1)
-        _EdgeSize ("Edge Size", Int) = 4
-        _EdgeFactor ("Edge Factor", Float) = 1
+        _OutlineSize ("Outline Size", Int) = 4
+        _OutlineFactor ("Outline Factor", Float) = 1
     }
 
     SubShader {
@@ -21,10 +21,10 @@ Shader "zer0/Image Effects/Outlines/Outline Based Convolution" {
             sampler2D _MainTex;
             sampler2D _OutlineTex;
             float2 _OutlineTex_TexelSize;
-            fixed4 _EdgeColor;
+            fixed4 _OutlineColor;
             fixed4 _BackgroundColor;
-            float _EdgeSize;
-            fixed _EdgeFactor;
+            float _OutlineSize;
+            fixed _OutlineFactor;
 
             struct v2f {
                 float4 pos : SV_POSITION;
@@ -39,8 +39,8 @@ Shader "zer0/Image Effects/Outlines/Outline Based Convolution" {
                 o.pos = UnityObjectToClipPos (i.vertex);
 
                 half2 uv = i.texcoord;
-                float horizontal = _OutlineTex_TexelSize.x * _EdgeSize;
-                float vertical = _OutlineTex_TexelSize.y * _EdgeSize;
+                float horizontal = _OutlineTex_TexelSize.x * _OutlineSize;
+                float vertical = _OutlineTex_TexelSize.y * _OutlineSize;
 
                 // 3x3
                 o.uv[0] = uv + float2 (-1, -1) * float2 (horizontal, vertical);
@@ -64,7 +64,7 @@ Shader "zer0/Image Effects/Outlines/Outline Based Convolution" {
                 // so the original color value can be directly returned.
                 fixed4 col = tex2D (_OutlineTex, i.uv[4]);
                 if (col.r > 0)
-                    return lerp (tex2D (_MainTex, i.uv[4]), _BackgroundColor, _EdgeFactor);
+                    return lerp (tex2D (_MainTex, i.uv[4]), _BackgroundColor, _OutlineFactor);
 
                 // Checking whether there is a color value in the surrounding 8 pixels. 
                 // Here r value is used for judging.
@@ -79,10 +79,10 @@ Shader "zer0/Image Effects/Outlines/Outline Based Convolution" {
 
                 // Return the original texture if there is no color value around it.
                 if (colorCollector == 0)
-                    return lerp (tex2D (_MainTex, i.uv[4]), _BackgroundColor, _EdgeFactor);
+                    return lerp (tex2D (_MainTex, i.uv[4]), _BackgroundColor, _OutlineFactor);
 
-                // Return the edge color if there is any color value around it.
-                return _EdgeColor;
+                // Return the outline color if there is any color value around it.
+                return _OutlineColor;
             }
 
             ENDCG
