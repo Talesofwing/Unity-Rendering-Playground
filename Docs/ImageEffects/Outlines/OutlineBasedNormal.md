@@ -1,4 +1,4 @@
-# OutlineBasedNormal
+# Outline-Based-Normal
 
 ## Introduction
 In this project, contour rendering based on vertex expansion in the direction of the normal was implemented. By passing a GameObject with `MeshFilter` or `SkinnedMeshRenderer` to `OutlineBasedNormal` in the Camera, the outline can be automatically rendered. 
