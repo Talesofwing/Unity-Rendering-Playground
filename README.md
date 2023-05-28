@@ -11,8 +11,8 @@ This project is a playground for Unity Rendering. Currently, the project is stil
 - [ ] Toon Shading
 
 ## Doing
-- [ ] [ImageEffect-Outline](Docs/ImageEffects/ImageEffect-Outline.md)
-- [ ] [Outline](Docs/Outline/Outline.md)
+- [ ] [ImageEffect-Outline](Docs/ImageEffects/Outlines/ImageEffect-Outline.md)
+- [ ] [Outline](Docs/Outlines/Outline.md)
 
 ## Big Targets
 - [ ] Analyzing the rendering of Genshin Impact!!
