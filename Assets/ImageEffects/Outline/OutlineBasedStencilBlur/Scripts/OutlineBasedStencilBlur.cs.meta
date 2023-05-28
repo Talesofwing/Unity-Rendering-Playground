@@ -4,8 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - _blurMat: {fileID: 2100000, guid: 412f6f855c5f259458bfbcd8dc7ff64b, type: 2}
-  - _compositeMat: {fileID: 2100000, guid: 2d0d12523a4d8b142a83fda57d34fb0c, type: 2}
+  - _shader: {fileID: 4800000, guid: e5cf20608dc0dd344b4be96c4860c8ce, type: 3}
+  - _blurShader: {fileID: 4800000, guid: c6b1ef1fb65171f4b883cf1c40645ce2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

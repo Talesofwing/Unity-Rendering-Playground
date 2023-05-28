@@ -5,10 +5,9 @@ using UnityEngine.Rendering;
 
 namespace ImageEffects.Outlines {
 
-    public class OutlineBasedStencilBlur : MonoBehaviour {
+    public class OutlineBasedStencilBlur : BaseImageEffect {
         public static Action<CommandBuffer> RenderEvent;
-        [SerializeField] private Material _blurMat;
-        [SerializeField] private Material _compositeMat;
+        [SerializeField] private Shader _blurShader;
         [SerializeField] private float _blurScale = 2;
         [SerializeField] private int _iterate = 3;
         [SerializeField] private float _OutlineScale = 3;
@@ -20,6 +19,18 @@ namespace ImageEffects.Outlines {
 
         [SerializeField] private GameObject[] _AllObjects;
         private List<GameObject> _outlineObjects = new List<GameObject> ();
+
+        private Material _blurMat;
+        public Material BlurMat {
+            get {
+                if (null == _blurMat) {
+                    _blurMat = new Material (_blurShader);
+                    _blurMat.hideFlags = HideFlags.DontSave;
+                }
+
+                return _blurMat;
+            }
+        }
 
         private void Awake () {
             _commandBuffer = new CommandBuffer ();
@@ -81,22 +92,22 @@ namespace ImageEffects.Outlines {
         private void RenderBlur () {
             _blurTex = RenderTexture.GetTemporary (Screen.width, Screen.height, 0);
             RenderTexture temp = RenderTexture.GetTemporary (Screen.width, Screen.height, 0);
-            _blurMat.SetFloat ("_BlurScale", _blurScale);
-            Graphics.Blit (_stencilTex, _blurTex, _blurMat);
+            BlurMat.SetFloat ("_BlurScale", _blurScale);
+            Graphics.Blit (_stencilTex, _blurTex, BlurMat);
             for (int i = 0; i < _iterate; i++) {
-                Graphics.Blit (_blurTex, temp, _blurMat);
-                Graphics.Blit (temp, _blurTex, _blurMat);
+                Graphics.Blit (_blurTex, temp, BlurMat);
+                Graphics.Blit (temp, _blurTex, BlurMat);
             }
             RenderTexture.ReleaseTemporary (temp);
         }
 
         private void RenderComposite (RenderTexture src, RenderTexture dest) {
-            _compositeMat.SetTexture ("_MainTex", src);
-            _compositeMat.SetTexture ("_StencilTex", _stencilTex);
-            _compositeMat.SetTexture ("_BlurTex", _blurTex);
-            _compositeMat.SetFloat ("_OutlineScale", _OutlineScale);
-            _compositeMat.SetColor ("_OutlineColor", _outlineColor);
-            Graphics.Blit (src, dest, _compositeMat);
+            Mat.SetTexture ("_MainTex", src);
+            Mat.SetTexture ("_StencilTex", _stencilTex);
+            Mat.SetTexture ("_BlurTex", _blurTex);
+            Mat.SetFloat ("_OutlineScale", _OutlineScale);
+            Mat.SetColor ("_OutlineColor", _outlineColor);
+            Graphics.Blit (src, dest, Mat);
             RenderTexture.ReleaseTemporary (_stencilTex);
             RenderTexture.ReleaseTemporary (_blurTex);
             _stencilTex = null;
