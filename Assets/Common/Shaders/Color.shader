@@ -1,4 +1,4 @@
-Shader "zer0/Common/Stencil" {
+Shader "zer0/Common/Color" {
     
     Properties { 
         _Color ("Color", Color) = (1, 0, 0, 0)
