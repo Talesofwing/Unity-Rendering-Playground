@@ -1,4 +1,4 @@
-Shader "zer0/Image Effects/Outline/Others/Composite" {
+Shader "zer0/Image Effects/Outlines/Outline Based Stencil Blur/Composite" {
     
     Properties {
         [NoScaleOffset] _MainTex ("Source Tex", 2D) = "white" {}

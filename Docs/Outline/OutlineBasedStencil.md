@@ -16,7 +16,7 @@ In practice, there is no significant difference in the results obtained from cal
 
 Additionally, due to the use of normal extrusion, as shown in the image, some discontinuous shapes may still exhibit issues with outlining being separated from the object.
 
-![OutlineBasedStencil](/Imgs/Outlines/OutlineBasedStencil.png)
+![OutlineBasedStencil](/Imgs/Outlines/outline_based_stencil.png)
 
 ## References
 1. [CSDN-unity 描边之stencil篇](https://blog.csdn.net/akak2010110/article/details/86149390?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-9-86149390-blog-78729906.235^v35^pc_relevant_increate_t0_download_v2_base&spm=1001.2101.3001.4242.6&utm_relevant_index=12)

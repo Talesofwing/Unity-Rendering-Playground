@@ -1,4 +1,4 @@
-Shader "zer0/ImageEffects/Outline Based Normal" {
+Shader "zer0/Image Effects/Outlines/Outline Based Normal" {
     
     Properties {
         _EdgeColor ("Edge Color", Color) = (0, 1, 0, 1)

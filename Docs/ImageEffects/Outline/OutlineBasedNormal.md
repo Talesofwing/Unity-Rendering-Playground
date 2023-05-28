@@ -5,7 +5,7 @@ In this project, contour rendering based on vertex expansion in the direction of
 
 However, as shown in the figure, the effect is not as good as expected. When the vertices are not continuous (such as Cube), separation occurs. Moreover, because the Mesh needs to be rendered again, if the Mesh is complex, it will consume more performance.
 
-![result](/Imgs/ImageEffects/Outline/outline_based_normal_result.png)
+![result](/Imgs/ImageEffects/Outlines/OutlineBasedNormal/01.png)
 
 ## Principle
 1. Get the mesh that needs to draw the outline
@@ -14,8 +14,8 @@ However, as shown in the figure, the effect is not as good as expected. When the
 
 The result will be good for continuous meshes like Sphere.
 
-![01](/Imgs/ImageEffects/Outline/outline_based_normal_01.png)
+![01](/Imgs/ImageEffects/Outlines/OutlineBasedNormal/02.png)
 
 Separation phenomenon will occur for non-continuous meshes like Cube.
 
-![02](/Imgs/ImageEffects/Outline/outline_based_normal_02.png)
+![02](/Imgs/ImageEffects/Outlines/OutlineBasedNormal/03.png)

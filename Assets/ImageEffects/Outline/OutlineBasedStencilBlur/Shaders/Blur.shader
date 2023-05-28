@@ -1,4 +1,4 @@
-Shader "zer0/Image Effects/Outline/Others/Blur" {
+Shader "zer0/Image Effects/Outlines/Outline Based Stencil Blur/Blur" {
     
     Properties {
         [NoScaleOffset] _MainTex ("Stencil Tex", 2D) = "white" {}

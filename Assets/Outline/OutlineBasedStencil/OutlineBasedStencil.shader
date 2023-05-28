@@ -1,4 +1,4 @@
-Shader "zer0/Outline/Outline Based Stencil" {
+Shader "zer0/Outlines/Outline Based Stencil" {
     
     Properties {
         _MainTex ("Texture", 2D) = "white" {}
