@@ -3,9 +3,9 @@
 ## Introducation
 This project implements Outline rendering using various methods, including:
 
-1. [Outline-Based-Convolution](Outline/OutlineBasedConvolution.md)
-2. [Outline-Based-Normal](Outline/OutlineBasedNormal.md)
-3. [Outline-Based-Stencil-Blur](Outline/OutlineBasedStencilBlur.md)
+1. [Outline-Based-Convolution](OutlineBasedConvolution.md)
+2. [Outline-Based-Normal](OutlineBasedNormal.md)
+3. [Outline-Based-Stencil-Blur](OutlineBasedStencilBlur.md)
 
 There are many methods for rendering Outline. In the book "Real Time Rendering, third edition", the author categorizes these methods into five types:
 
