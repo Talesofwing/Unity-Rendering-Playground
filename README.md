@@ -5,6 +5,7 @@
 This project is a playground for Unity Rendering. Currently, the project is still using the Built-In Pipeline, but there are plans to transition to using the Scriptable Render Pipeline (SRP) in the future.
 
 ## TODO
+- [ ] Bloom
 - [ ] Import SRP
 - [ ] [DepthOfField](Docs/ImageEffects/DepthOfField.md)
 - [ ] [ScreenSpaceAmbientOcclusion](Docs/ImageEffects/SSAO.md)
