@@ -42,15 +42,19 @@ namespace ImageEffects.Outlines {
                 RaycastHit hit;
                 if (Physics.Raycast (ray, out hit)) {
                     GameObject hitGo = hit.collider.gameObject;
-                    if (Input.GetKey (KeyCode.LeftControl) || Input.GetKey (KeyCode.RightControl)) {
-                        if (_outlineObjects.Contains (hitGo)) {
-                            _outlineObjects.Remove (hitGo);
+                    if (hitGo.GetComponent<OutlineObject> () == null) {
+                        _outlineObjects.Clear ();
+                    } else {
+                        if (Input.GetKey (KeyCode.LeftControl) || Input.GetKey (KeyCode.RightControl)) {
+                            if (_outlineObjects.Contains (hitGo)) {
+                                _outlineObjects.Remove (hitGo);
+                            } else {
+                                _outlineObjects.Add (hitGo);
+                            }
                         } else {
+                            _outlineObjects.Clear ();
                             _outlineObjects.Add (hitGo);
                         }
-                    } else {
-                        _outlineObjects.Clear ();
-                        _outlineObjects.Add (hitGo);
                     }
                 } else {
                     _outlineObjects.Clear ();
