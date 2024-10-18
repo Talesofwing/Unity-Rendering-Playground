@@ -27,6 +27,6 @@ Development logs and updates can be found [here](Docs/Log.md).
 
 - [Cubemap-Renderer](Docs/Cubemap/Cubemap-Renderer.md)
 - [Skybox](Docs/Cubemap/Skybox.md)
+- [Grass](Docs/Animations/VertexAnimations/Grass.md)
 - [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
-- [VertexAnimation-Grass](Docs/VertexAnimation/Grass.md)
 - [RampTexture](Docs/TexEffects/RampTexture.md)
