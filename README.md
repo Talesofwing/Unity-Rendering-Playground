@@ -9,12 +9,12 @@ Development logs and updates can be found [here](Docs/Log.md).
 ## Todo
 - Post-Processing Effect
     - Booom
+    - Grayscale
 - Import SRP
 
 ## Doing
 - [ImageEffect-Outline](Docs/ImageEffects/Outlines/ImageEffect-Outline.md)
 - [Outline](Docs/Outlines/Outline.md)
-- [Grayscale](Docs/Post-Processing-Effect/Grayscale.md)
 
 ## Big Targets
 - Implement the rendering of Genshin Impact!!
@@ -25,7 +25,8 @@ Development logs and updates can be found [here](Docs/Log.md).
 > 
 > In this section, recently implemented effects will be displayed, while some older implementations will be removed.
 
+- [Cubemap-Renderer](Docs/Cubemap/Cubemap-Renderer.md)
+- [Skybox](Docs/Cubemap/Skybox.md)
 - [ScreenSpaceShadowMapping](Docs/ScreenSpaceShadowMapping.md)
-- [Cubemap-Skybox](Docs/Cubemap-Skybox.md)
 - [VertexAnimation-Grass](Docs/VertexAnimation/Grass.md)
 - [RampTexture](Docs/TexEffects/RampTexture.md)
