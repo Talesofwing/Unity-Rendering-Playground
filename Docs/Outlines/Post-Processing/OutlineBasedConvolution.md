@@ -1,9 +1,8 @@
 # Outline-Based-Convolution
 
-## Introducation
 In this project, the Outline rendering for the specified layer is implemented. By setting the `Layer` of the `GameObject` to `Outline`, it will be automatically rendered.
 
-![result](/Imgs/ImageEffects/Outlines/OutlineBasedConvolution/01.png)
+![01](/Imgs/Outlines/Post-Processing/OutlineBasedConvolution/01.png)
 
 ## Principle
 1. Use a new camera to render the objects of the specified layer (Outline). Use `Camera.RenderWithShader(shader, "")`. A simple shader is preferred at this step because we only want to render a texture to indicate which pixels are covered by objects on this layer.
@@ -11,10 +10,10 @@ In this project, the Outline rendering for the specified layer is implemented. B
     
     In the 9-grid, if color values are sampled, the processed pixel will be rendered with the outline color.
 
-    ![01](/Imgs/ImageEffects/Outlines/OutlineBasedConvolution/02.png)
+    ![02](/Imgs/Outlines/Post-Processing/OutlineBasedConvolution/02.png)
 
     In the 9-grid, if there is no color sampled, the pixel being processed will be rendered with the original texture color.
     
-    ![02](/Imgs/ImageEffects/Outlines/OutlineBasedConvolution/03.png)
+    ![03](/Imgs/Outlines/Post-Processing/OutlineBasedConvolution/03.png)
 
 It's actually a type of convolution application. Other convolution kernels can be used to achieve this effect.
