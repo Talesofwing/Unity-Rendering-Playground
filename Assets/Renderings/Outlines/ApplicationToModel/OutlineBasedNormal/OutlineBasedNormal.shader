@@ -33,13 +33,14 @@ Shader "zer0/Outlines/Outline Based Normal" {
             #pragma vertex vert
             #pragma fragment frag
 
-            v2f vert (a2v i) {
+            v2f vert (a2v i) {             
+                
                 v2f o;
-                i.vertex = mul (UNITY_MATRIX_MV, i.vertex);
-                float3 normal = mul ((float3x3)UNITY_MATRIX_IT_MV, i.normal);
+                i.vertex = mul(UNITY_MATRIX_MV, i.vertex);
+                float3 normal = mul((float3x3)UNITY_MATRIX_IT_MV, i.normal);
                 normal.z = -0.4f;
-                i.vertex += float4(normalize (normal), 0) * _OutlineSize;
-                o.pos = mul (UNITY_MATRIX_P, i.vertex);
+                i.vertex += float4(normalize(normal), 0) * _OutlineSize;
+                o.pos = mul(UNITY_MATRIX_P, i.vertex);
                 return o;
             }
 
@@ -59,8 +60,6 @@ Shader "zer0/Outlines/Outline Based Normal" {
             #include "UnityCG.cginc"
 
             fixed4 _Color;
-            fixed4 _OutlineColor;
-            float _OutlineSize;
 
             struct a2v {
                 float4 vertex : POSITION;

@@ -12,3 +12,5 @@ $$
 - $R_0$ is the reflectance calculated from the refractive indices of the two media.In the project, $R_0$ is directly provided as an input parameter.
 - $\eta_1$ is the refractive index of the incident medium, and $\eta_2$ is the refractive index of the exiting medium.
 - $\theta$ is the angle between the normal and the view direction.
+
+![01](/Imgs/Outlines/ApplicationToModel/OutlineBasedFresnel/01.png)
