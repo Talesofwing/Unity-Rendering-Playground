@@ -1,4 +1,4 @@
-Shader "zer0/Image Effects/Outlines/Outline Based Stencil Blur/Composite" {
+Shader "zer0/Outlines/Post-Processing/Outline Based Stencil Blur/Composite" {
     
     Properties {
         [NoScaleOffset] _MainTex ("Source Tex", 2D) = "white" {}
@@ -36,24 +36,25 @@ Shader "zer0/Image Effects/Outlines/Outline Based Stencil Blur/Composite" {
                 float2 uv : TEXCOORD0;
             };
 
-            v2f vert (appdata_img i) {
+            v2f vert(appdata_img i) {
                 v2f o;
-                o.pos = UnityObjectToClipPos (i.vertex);
+                o.pos = UnityObjectToClipPos(i.vertex);
                 o.uv = i.texcoord;
                 return o;
             }
 
-            fixed4 frag (v2f i) : SV_TARGET {
-                fixed4 src = tex2D (_MainTex, i.uv);
-                fixed4 stencil = tex2D (_StencilTex, i.uv);
+            fixed4 frag(v2f i) : SV_TARGET {
+                fixed4 src = tex2D(_MainTex, i.uv);
+                fixed4 stencil = tex2D(_StencilTex, i.uv);
 
-                if (any (stencil.rgb)) {
+                if (any(stencil.rgb)) {
+                    // Object inner
                     return src;
                 } else {
-                    fixed4 blur = tex2D (_BlurTex, i.uv);
+                    fixed4 blur = tex2D(_BlurTex, i.uv);
                     fixed4 color;
-                    if (any (blur.rgb)) {
-                        color.rgb = lerp (src.rgb, _OutlineColor.rgb * _OutlineScale, saturate (blur.a - stencil.a));
+                    if (any(blur.rgb)) {
+                        color.rgb = lerp(src.rgb, _OutlineColor.rgb * _OutlineScale, saturate(blur.a - stencil.a));
                         // color.rgb = _OutlineColor;
                         color.a = src.a;
                     } else {

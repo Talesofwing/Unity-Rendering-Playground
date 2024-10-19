@@ -1,7 +1,7 @@
 Shader "zer0/Common/Color" {
     
     Properties { 
-        _Color ("Color", Color) = (1, 0, 0, 0)
+        _Color ("Color", Color) = (1, 0, 0, 1)
     }
 
     SubShader {

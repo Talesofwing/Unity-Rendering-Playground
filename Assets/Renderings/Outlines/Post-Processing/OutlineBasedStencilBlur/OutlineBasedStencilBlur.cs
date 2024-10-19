@@ -3,23 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace ImageEffects.Outlines
+namespace Outline.PostProcessing.StencilBlur
 {
-
     public class OutlineBasedStencilBlur : PostProcessingEffectBase
     {
         public static Action<CommandBuffer> RenderEvent;
-        [SerializeField] private Shader _blurShader;
-        [SerializeField] private float _blurScale = 2;
-        [SerializeField] private int _iterate = 3;
-        [SerializeField] private float _OutlineScale = 3;
-        [SerializeField] private Color _outlineColor = Color.black;
+
+        [SerializeField]
+        private Shader _blurShader;
+        [SerializeField]
+        private float _blurScale = 2;
+        [SerializeField]
+        private int _iterate = 3;
+        [SerializeField]
+        private float _OutlineScale = 3;
+        [SerializeField]
+        private Color _outlineColor = Color.black;
+        [SerializeField]
+        private GameObject[] _AllObjects;
 
         private CommandBuffer _commandBuffer;
         private RenderTexture _stencilTex;
         private RenderTexture _blurTex;
 
-        [SerializeField] private GameObject[] _AllObjects;
         private List<GameObject> _outlineObjects = new List<GameObject>();
 
         private Material _blurMat;
@@ -148,7 +154,5 @@ namespace ImageEffects.Outlines
             _stencilTex = null;
             _blurTex = null;
         }
-
     }
-
 }
