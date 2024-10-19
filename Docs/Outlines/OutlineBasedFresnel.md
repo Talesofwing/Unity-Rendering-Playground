@@ -3,7 +3,7 @@
 The implementation is effective for spherical objects. It uses the [Schlick Approximation](https://en.wikipedia.org/wiki/Schlick%27s_approximation), with the following formulas:
 
 $$
-R(0) = (\frac{\eta_1 - \eta_2}{\eta_1 + \eta_2})^2 \\[5px]
+R(0) = (\frac{\eta_1 - \eta_2}{\eta_1 + \eta_2})^2 \\
 F(v, n) = R_0 + (1 - R_0) \cdot (1 - \cos(\theta))^5
 $$
 
