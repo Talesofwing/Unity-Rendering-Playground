@@ -59,8 +59,12 @@ Shader "zer0/Outlines/Outline Based Stencil Smooth Normal" {
                 v2f o;
                 fixed3 n = any(i.smoothNormal) ? i.smoothNormal : i.normal;
                 fixed3 viewN = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, n));
-                float3 viewPos = UnityObjectToViewPos(i.vertex);
-                o.pos = UnityViewToClipPos(viewPos + viewN * _OutlineWidth * (-viewPos.z) / 1000.0f);
+                float3 viewPos = UnityObjectToViewPos(i.vertex);m
+
+                // Multiplying by −viewPos.z counteracts the perspective transformation, 
+                // which causes the outline width to appear larger for closer objects and smaller for distant ones.
+                // Dividing by 1000 converts the outline width to a unit of mm.
+                o.pos = UnityViewToClipPos(viewPos + viewN * (-viewPos.z) _OutlineWidth / 1000.0f);
                 return o;
             }
 
