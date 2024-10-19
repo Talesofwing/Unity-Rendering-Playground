@@ -2,7 +2,7 @@
 
 Outline based on normals is quite simple. It only requires two passes: one for drawing the outline and one for drawing the object itself.
 
-In the pass for drawing the outline, you need to set Cull to Front, which means only the back faces are rendered, while the front faces are culled.
+In the pass for drawing the outline, you need to set Cull to Front, which means only the back faces are rendered, while the front faces are culled. Additionally, the vertices should be offset along their normal direction by a small amount.
 
 This method is highly effective for continuous meshes, but for discrete meshes, it can lead to separation issues.
 
