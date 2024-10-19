@@ -47,8 +47,8 @@ Shader "zer0/Outlines/Outline Based Stencil Smooth Normal" {
 
             struct a2v {
                 float4 vertex : POSITION;
-                float3 normal : NORMAL;
-                float3 smoothNormal : TEXCOORD3;
+                fixed3 normal : NORMAL;
+                fixed3 smoothNormal : TEXCOORD3;
             };
 
             struct v2f {
@@ -57,10 +57,10 @@ Shader "zer0/Outlines/Outline Based Stencil Smooth Normal" {
 
             v2f vert (a2v i) {
                 v2f o;
-                float3 n = any (i.smoothNormal) ? i.smoothNormal : i.normal;
-                float3 viewN = normalize (mul ((float3x3)UNITY_MATRIX_IT_MV, n));
-                float3 viewPos = UnityObjectToViewPos (i.vertex);
-                o.pos = UnityViewToClipPos (viewPos + viewN * _OutlineWidth * (-viewPos.z) / 1000.0f);
+                fixed3 n = any(i.smoothNormal) ? i.smoothNormal : i.normal;
+                fixed3 viewN = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, n));
+                float3 viewPos = UnityObjectToViewPos(i.vertex);
+                o.pos = UnityViewToClipPos(viewPos + viewN * _OutlineWidth * (-viewPos.z) / 1000.0f);
                 return o;
             }
 
