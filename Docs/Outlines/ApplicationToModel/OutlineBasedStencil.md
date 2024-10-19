@@ -5,4 +5,4 @@ Before diving into this example, it is important to understand what `Stencil` is
 The project requires improvement, and further explanations will be added later.
 
 ### Explore More
-1. [Outline-Based-Stencil-SmoothNormal](OutlineBasedStencilSmoothNormal)
+1. [Outline-Based-Stencil-SmoothNormal](OutlineBasedStencilSmoothNormal.md)
