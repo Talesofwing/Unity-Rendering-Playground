@@ -1,4 +1,4 @@
-Shader "zer0/Outlines/Outline Based Fresnel" {
+Shader "zer0/Outlines/Application/Outline Based Fresnel" {
     
     Properties {
         _MainTex ("Texture", 2D) = "white" {}

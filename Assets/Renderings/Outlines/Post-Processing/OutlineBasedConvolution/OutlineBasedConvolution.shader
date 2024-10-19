@@ -1,4 +1,4 @@
-Shader "zer0/Image Effects/Outlines/Outline Based Convolution" {
+Shader "zer0/Outlines/Post-Processing/Outline Based Convolution" {
     
     Properties {
         _MainTex ("Main Texture", 2D) = "black" {}

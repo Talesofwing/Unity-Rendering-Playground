@@ -1,4 +1,4 @@
-Shader "zer0/Outlines/Outline Based Normal" {
+Shader "zer0/Outlines/Application/Outline Based Normal" {
     
     Properties {
         _Color ("Color", Color) = (1, 1, 1, 1)
