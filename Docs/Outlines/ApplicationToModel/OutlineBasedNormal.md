@@ -8,4 +8,17 @@ This method is highly effective for continuous meshes, but for discrete meshes, 
 
 ![01](/Imgs/Outlines/ApplicationToModel/OutlineBasedNormal/01.png)
 
-For more details, you can refer to [here](/Docs/Outlines/Post-Processing/OutlineBasedNormal.md).
+## Principle
+1. Get the mesh that needs to draw the outline
+2. Use `Graphics.DrawMesh()` to render the Mesh again
+3. In the Shader, expand the vertices in the direction of the normal, obtain new vertex positions and color them.
+
+The result will be good for continuous meshes like Sphere.
+
+![02](/Imgs/Outlines/ApplicationToModel/OutlineBasedNormal/02.png)
+
+Separation phenomenon will occur for non-continuous meshes like Cube.
+
+![03](/Imgs/Outlines/ApplicationToModel/OutlineBasedNormal/03.png)
+
+The solution can be found [here](/Docs/Outlines/ApplicationToModel/OutlineBasedStencilSmoothNormal.md).
