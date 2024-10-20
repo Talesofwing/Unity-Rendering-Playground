@@ -15,7 +15,6 @@ There are mainly two methods to render Outline:
 
 #### Post-Processing
 1. [Outline-Based-Convolution](Post-Processing/OutlineBasedConvolution.md)
-2. [Outline-Based-Normal](Post-Processing/OutlineBasedNormal.md)
 3. [Outline-Based-StencilBlur](Post-Processing/OutlineBasedStencilBlur.md)
 
 ### References
