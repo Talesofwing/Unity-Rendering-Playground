@@ -14,7 +14,7 @@ For more information, please refer to [Docs](Docs).
 - Import SRP
 
 ## Doing
-- [Outline](Docs/Outlines/Outline.md)
+- [Outline](Docs/Outlines/)
 - Post-Processing Effect
     - Grayscale
 
