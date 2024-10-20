@@ -1,5 +1,8 @@
 # Docs
 
+## Logs
+[Log](Log.md)
+
 ## News
 > [!Note]
 > 
@@ -9,5 +12,4 @@
 - [Skybox](Cubemap/Skybox.md)
 - [Grass](Animations/VertexAnimations/Grass.md)
 - [Outline](Outlines/)
-- [ScreenSpaceShadowMapping](ScreenSpaceShadowMapping.md)
 - [RampTexture](TexEffects/RampTexture.md)
