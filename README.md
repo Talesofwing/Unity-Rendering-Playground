@@ -9,7 +9,6 @@ For more information, please refer to [Docs](Docs).
 ## Todo
 - Post-Processing Effect
     - Booom
-    - Grayscale
     - ...
 - Shadows
 - Import SRP
@@ -17,6 +16,7 @@ For more information, please refer to [Docs](Docs).
 ## Doing
 - [Outline](Docs/Outlines/Outline.md)
 - Post-Processing Effect
+    - Grayscale
 
 ## Big Targets
 - Implement the rendering of Genshin Impact!!

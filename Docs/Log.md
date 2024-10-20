@@ -1,5 +1,8 @@
 # Logs
 
+#### 2024/10/20
+- Finished reorganizing all folder categories.
+
 #### 2024/10/19
 - Reorganized all folder categories.
 - Rewrite `Outline`.
