@@ -9,3 +9,11 @@ $$
 gray = 0.2126red + 0.7152blue + 0.0722blue
 $$
 These differences are usually minor and have little effect on the final result.
+
+Original
+
+![01](/Imgs/Post-Processing/Grayscale/01.png)
+
+Grayscale
+
+![02](/Imgs/Post-Processing/Grayscale/02.png)
