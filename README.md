@@ -7,16 +7,22 @@ This project is a playground for Unity Rendering. Currently, the project is stil
 For more information, please refer to [Docs](Docs).
 
 ## Todo
-- Post-Processing Effect
-    - Booom
-    - ...
-- Shadows
 - Import SRP
+- Shadows
+- Raytracing(Basic Path-Tracing)
+- PBR Material
 
 ## Doing
 - [Outline](Docs/Outlines/)
 - Post-Processing Effect
-    - Grayscale
+    - Booom
+    - Color Adjustment
+    - Toon Mapping
+    - Blur
+        - Gaussian blur
+        - Box blur
+        - Motion blur
+        - Depth of Field
 
 ## Big Targets
 - Implement the rendering of Genshin Impact!!
