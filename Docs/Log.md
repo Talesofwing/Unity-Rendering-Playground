@@ -1,5 +1,8 @@
 # Logs
 
+#### 2024/10/25
+- Add `Grayscale` post-processing effect.
+
 #### 2024/10/20
 - Finished reorganizing all folder categories.
 
