@@ -110,5 +110,4 @@ public class OutlineBasedConvolution : PostProcessingEffectBase
             Graphics.Blit(src, dest);
         }
     }
-
 }

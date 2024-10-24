@@ -13,3 +13,4 @@
 - [Grass](Animations/VertexAnimations/Grass.md)
 - [Outline](Outlines/)
 - [RampTexture](TexEffects/RampTexture.md)
+- [Grayscale](Post-Processing/Grayscale.md)
