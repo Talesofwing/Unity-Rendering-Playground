@@ -9,13 +9,14 @@ For more information, please refer to [Docs](Docs).
 ## Todo
 - Import SRP
 - Shadows
+- Fog
 - Raytracing(Basic Path-Tracing)
 - PBR Material
 
 ## Doing
 - [Outline](Docs/Outlines/)
 - Post-Processing Effect
-    - Booom
+    - Bloom
     - Color Adjustment
     - Toon Mapping
     - Blur
