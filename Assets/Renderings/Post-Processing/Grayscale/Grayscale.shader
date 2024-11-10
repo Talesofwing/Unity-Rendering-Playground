@@ -1,4 +1,4 @@
-Shader "Unlit/Grayscale"
+Shader "zer0/Post-Processing/Grayscale"
 {
     Properties
     {
