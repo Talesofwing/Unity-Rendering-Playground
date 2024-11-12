@@ -1,5 +1,11 @@
 # Logs
 
+#### 2024/11/12
+- Add the `DefaultScene`, which is used to showcase various rendering effects.
+- Import a few plugins.
+- Change skybox texture.
+- Implement `Gaussian Blur`.
+
 #### 2024/10/25
 - Add `Grayscale` post-processing effect.
 
