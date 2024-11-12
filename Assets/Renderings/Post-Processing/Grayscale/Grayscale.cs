@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class Grayscale : PostProcessingBase
+namespace zer0.PostProcessing
 {
-    private void OnRenderImage(RenderTexture src, RenderTexture dest)
+    public class Grayscale : PostProcessingBase
     {
-        if (_mat != null)
+        private void OnRenderImage(RenderTexture src, RenderTexture dest)
         {
-            Graphics.Blit(src, dest, _mat);
-        }
-        else
-        {
-            Graphics.Blit(src, dest);
+            if (_mat != null)
+            {
+                Graphics.Blit(src, dest, _mat);
+            }
+            else
+            {
+                Graphics.Blit(src, dest);
+            }
         }
     }
 }
