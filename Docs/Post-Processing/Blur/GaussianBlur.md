@@ -29,4 +29,6 @@ M =
 \end{bmatrix}
 $$
 
-![03](/Imgs/Post-Processing/GaussianBlur/01.gif)
+<p align="center">
+  <img src="/Imgs/Post-Processing/GaussianBlur/01.gif" alt="Gaussian Blur" title="Gaussian Blur">
+</p>
