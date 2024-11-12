@@ -14,14 +14,13 @@ For more information, please refer to [Docs](Docs).
 - PBR Material
 
 ## Doing
-- [Outline](Docs/Outlines/)
+- Outlines
 - Post-Processing Effect
     - Bloom
         - Based on HDR
     - Color Adjustment
     - Toon Mapping
     - Blur
-        - Gaussian blur
         - Box blur
         - Motion blur
         - Depth of Field
