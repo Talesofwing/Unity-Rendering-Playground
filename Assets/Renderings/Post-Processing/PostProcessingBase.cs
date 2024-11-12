@@ -1,20 +1,23 @@
 using UnityEngine;
 
-[ExecuteInEditMode]
-[RequireComponent(typeof(Camera))]
-public abstract class PostProcessingBase : MonoBehaviour
+namespace zer0
 {
-    [SerializeField]
-    private Shader _shader;
-
-    protected Camera _cam;
-    protected Material _mat;
-
-    protected virtual void Awake()
+    [ExecuteInEditMode]
+    [RequireComponent(typeof(Camera))]
+    public abstract class PostProcessingBase : MonoBehaviour
     {
-        _cam = GetComponent<Camera>();
+        [SerializeField]
+        private Shader _shader;
 
-        _mat = new Material(_shader);
-        _mat.hideFlags = HideFlags.DontSave;
+        protected Camera _cam;
+        protected Material _mat;
+
+        protected virtual void Awake()
+        {
+            _cam = GetComponent<Camera>();
+
+            _mat = new Material(_shader);
+            _mat.hideFlags = HideFlags.DontSave;
+        }
     }
 }
