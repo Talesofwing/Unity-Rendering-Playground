@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Outline.PostProcessing.StencilBlur
+namespace zer0.Outline.PostProcessing
 {
     public class OutlineObject : MonoBehaviour
     {

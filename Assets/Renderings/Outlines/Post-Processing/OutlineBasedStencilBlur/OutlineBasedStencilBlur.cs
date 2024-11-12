@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Outline.PostProcessing
+namespace zer0.Outline.PostProcessing
 {
     public class OutlineBasedStencilBlur : PostProcessingBase
     {

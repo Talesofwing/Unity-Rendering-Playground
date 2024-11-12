@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Outline.PostProcessing
+namespace zer0.Outline.PostProcessing
 {
     public class OutlineBasedConvolution : PostProcessingBase
     {
