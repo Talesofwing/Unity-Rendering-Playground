@@ -14,3 +14,4 @@
 - [Outline](Outlines/)
 - [RampTexture](TexEffects/RampTexture.md)
 - [Grayscale](Post-Processing/Grayscale.md)
+- [GaussianBlur](Post-Processing/Blur/GaussianBlur.md)
