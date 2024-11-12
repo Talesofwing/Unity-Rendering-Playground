@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Outline.PostProcessing.StencilBlur
+namespace Outline.PostProcessing
 {
-    public class OutlineBasedStencilBlur : PostProcessingEffectBase
+    public class OutlineBasedStencilBlur : PostProcessingBase
     {
         public static Action<CommandBuffer> RenderEvent;
 
@@ -43,8 +44,10 @@ namespace Outline.PostProcessing.StencilBlur
             }
         }
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+
             _commandBuffer = new CommandBuffer();
         }
 
@@ -143,12 +146,12 @@ namespace Outline.PostProcessing.StencilBlur
 
         private void RenderComposite(RenderTexture src, RenderTexture dest)
         {
-            Mat.SetTexture("_MainTex", src);
-            Mat.SetTexture("_StencilTex", _stencilTex);
-            Mat.SetTexture("_BlurTex", _blurTex);
-            Mat.SetFloat("_OutlineScale", _OutlineScale);
-            Mat.SetColor("_OutlineColor", _outlineColor);
-            Graphics.Blit(src, dest, Mat);
+            _mat.SetTexture("_MainTex", src);
+            _mat.SetTexture("_StencilTex", _stencilTex);
+            _mat.SetTexture("_BlurTex", _blurTex);
+            _mat.SetFloat("_OutlineScale", _OutlineScale);
+            _mat.SetColor("_OutlineColor", _outlineColor);
+            Graphics.Blit(src, dest, _mat);
             RenderTexture.ReleaseTemporary(_stencilTex);
             RenderTexture.ReleaseTemporary(_blurTex);
             _stencilTex = null;
