@@ -19,7 +19,7 @@ Shader "HayqArt/ToonShader"
 			Cull Front
 			CGPROGRAM
 			#pragma target 3.0
-			#pragma surface outlineSurf Outline nofog  keepalpha noshadow noambient novertexlights nolightmap nodynlightmap nodirlightmap nometa noforwardadd vertex:outlineVertexDataFunc 
+			// #pragma surface outlineSurf Outline nofog  keepalpha noshadow noambient novertexlights nolightmap nodynlightmap nodirlightmap nometa noforwardadd vertex:outlineVertexDataFunc 
 
 			float4 _ASEOutlineColor;
 			float _ASEOutlineWidth;
