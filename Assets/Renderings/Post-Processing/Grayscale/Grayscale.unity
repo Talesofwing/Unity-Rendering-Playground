@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6101589553479225933, guid: b060d459ab203b540b70d697de1d7762, type: 3}
       propertyPath: m_text
-      value: '- GRAYSCALE -'
+      value: '- Grayscale -'
       objectReference: {fileID: 0}
     - target: {fileID: 6101589553479225933, guid: b060d459ab203b540b70d697de1d7762, type: 3}
       propertyPath: m_HorizontalAlignment
