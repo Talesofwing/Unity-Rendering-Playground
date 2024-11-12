@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shader: {fileID: 4800000, guid: 29e1feb1de6701442817cd194c1fea1c, type: 3}
-  _iterations: 2
+  _iterations: 0
   _downSample: 1
   _horizontalBlurSize: 5
   _verticalBlurSize: 5
