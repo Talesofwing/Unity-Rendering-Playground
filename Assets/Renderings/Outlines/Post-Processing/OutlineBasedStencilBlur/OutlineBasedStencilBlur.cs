@@ -44,10 +44,8 @@ namespace zer0.Outline.PostProcessing
             }
         }
 
-        protected override void Awake()
+        private void Awake()
         {
-            base.Awake();
-
             _commandBuffer = new CommandBuffer();
         }
 
@@ -146,12 +144,12 @@ namespace zer0.Outline.PostProcessing
 
         private void RenderComposite(RenderTexture src, RenderTexture dest)
         {
-            _mat.SetTexture("_MainTex", src);
-            _mat.SetTexture("_StencilTex", _stencilTex);
-            _mat.SetTexture("_BlurTex", _blurTex);
-            _mat.SetFloat("_OutlineScale", _OutlineScale);
-            _mat.SetColor("_OutlineColor", _outlineColor);
-            Graphics.Blit(src, dest, _mat);
+            Mat.SetTexture("_MainTex", src);
+            Mat.SetTexture("_StencilTex", _stencilTex);
+            Mat.SetTexture("_BlurTex", _blurTex);
+            Mat.SetFloat("_OutlineScale", _OutlineScale);
+            Mat.SetColor("_OutlineColor", _outlineColor);
+            Graphics.Blit(src, dest, Mat);
             RenderTexture.ReleaseTemporary(_stencilTex);
             RenderTexture.ReleaseTemporary(_blurTex);
             _stencilTex = null;

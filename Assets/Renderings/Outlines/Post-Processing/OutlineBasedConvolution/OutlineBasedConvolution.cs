@@ -44,8 +44,8 @@ namespace zer0.Outline.PostProcessing
                     }
 
                     _extraCamera.name = "Extra Camera";
-                    _extraCamera.CopyFrom(_cam);
-                    _extraCamera.transform.SetParent(_cam.transform);
+                    _extraCamera.CopyFrom(Cam);
+                    _extraCamera.transform.SetParent(Cam.transform);
                     _extraCamera.clearFlags = CameraClearFlags.Color;
                     _extraCamera.backgroundColor = Color.black;
                     _extraCamera.cullingMask = LayerMask.NameToLayer("Outline");
@@ -62,7 +62,7 @@ namespace zer0.Outline.PostProcessing
             {
                 Vector3 mousePos = Input.mousePosition;
                 mousePos.z = 1.0f;
-                Ray ray = _cam.ScreenPointToRay(mousePos);
+                Ray ray = Cam.ScreenPointToRay(mousePos);
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit, float.MaxValue))
                 {
@@ -88,7 +88,7 @@ namespace zer0.Outline.PostProcessing
 
         private void OnRenderImage(RenderTexture src, RenderTexture dest)
         {
-            if (_mat != null && _drawOccupyShader != null)
+            if (Mat != null && _drawOccupyShader != null)
             {
                 RenderTexture rt = new RenderTexture(src.width, src.height, 0);
 
@@ -97,13 +97,13 @@ namespace zer0.Outline.PostProcessing
                 // Render on a specified layer.
                 ExtraCamera.RenderWithShader(_drawOccupyShader, "");
 
-                _mat.SetTexture("_OutlineTex", rt);
-                _mat.SetColor("_OutlineColor", _outlineColor);
-                _mat.SetColor("_BackgroundColor", _backgroundColor);
-                _mat.SetInt("_OutlineSize", _outlineSize);
-                _mat.SetFloat("_OutlineFactor", _outlineFactor);
+                Mat.SetTexture("_OutlineTex", rt);
+                Mat.SetColor("_OutlineColor", _outlineColor);
+                Mat.SetColor("_BackgroundColor", _backgroundColor);
+                Mat.SetInt("_OutlineSize", _outlineSize);
+                Mat.SetFloat("_OutlineFactor", _outlineFactor);
 
-                Graphics.Blit(src, dest, _mat);
+                Graphics.Blit(src, dest, Mat);
 
                 rt.Release();
             }

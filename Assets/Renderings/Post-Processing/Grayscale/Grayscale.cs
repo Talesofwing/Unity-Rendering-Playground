@@ -6,9 +6,9 @@ namespace zer0.PostProcessing
     {
         private void OnRenderImage(RenderTexture src, RenderTexture dest)
         {
-            if (_mat != null)
+            if (Mat != null)
             {
-                Graphics.Blit(src, dest, _mat);
+                Graphics.Blit(src, dest, Mat);
             }
             else
             {

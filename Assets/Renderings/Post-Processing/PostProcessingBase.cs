@@ -9,15 +9,41 @@ namespace zer0
         [SerializeField]
         private Shader _shader;
 
-        protected Camera _cam;
-        protected Material _mat;
+        private Camera _cam;
+        private Material _mat;
 
-        protected virtual void Awake()
+        protected Camera Cam
         {
-            _cam = GetComponent<Camera>();
+            get
+            {
+                if (_cam == null)
+                {
+                    _cam = GetComponent<Camera>();
+                }
 
-            _mat = new Material(_shader);
-            _mat.hideFlags = HideFlags.DontSave;
+                return _cam;
+            }
+        }
+
+        protected Material Mat
+        {
+            get
+            {
+                if (_mat == null)
+                {
+                    if (_shader == null)
+                    {
+                        Debug.LogWarning("Shader is not set.");
+                    }
+                    else
+                    {
+                        _mat = new Material(_shader);
+                        _mat.hideFlags = HideFlags.DontSave;
+                    }
+                }
+
+                return _mat;
+            }
         }
     }
 }

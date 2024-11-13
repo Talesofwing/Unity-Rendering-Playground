@@ -22,10 +22,10 @@ namespace zer0.PostProcessing
 
         private void OnRenderImage(RenderTexture src, RenderTexture dest)
         {
-            if (_mat != null)
+            if (Mat != null)
             {
-                _mat.SetFloat("_VerticalBlurSize", _verticalBlurSize);
-                _mat.SetFloat("_HorizontalBlurSize", _horizontalBlurSize);
+                Mat.SetFloat("_VerticalBlurSize", _verticalBlurSize);
+                Mat.SetFloat("_HorizontalBlurSize", _horizontalBlurSize);
 
                 int rtW = src.width / _downSample;
                 int rtH = src.height / _downSample;
@@ -38,8 +38,8 @@ namespace zer0.PostProcessing
 
                 for (int i = 0; i < _iterations; ++i)
                 {
-                    Graphics.Blit(buffer0, buffer1, _mat, 0);   // vertical
-                    Graphics.Blit(buffer1, buffer0, _mat, 1);   // horizontal
+                    Graphics.Blit(buffer0, buffer1, Mat, 0);   // vertical
+                    Graphics.Blit(buffer1, buffer0, Mat, 1);   // horizontal
                 }
 
                 Graphics.Blit(buffer0, dest);
