@@ -2,3 +2,4 @@
 
 - [Grayscale](Grayscale.md)
 - [Blur](Blur/)
+- [Bloom](Bloom.md)
