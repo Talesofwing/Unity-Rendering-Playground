@@ -19,7 +19,7 @@ For more information, please refer to [Docs](Docs).
     - Bloom
         - Based on HDR
     - Color Adjustment
-    - Toon Mapping
+    - Tone Mapping
     - Blur
         - Box blur
         - Motion blur
