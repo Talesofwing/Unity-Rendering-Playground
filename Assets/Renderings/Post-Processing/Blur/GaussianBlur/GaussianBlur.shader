@@ -1,4 +1,4 @@
-Shader "zer0/Post-Processing/Blurs/GaussianBlur"
+Shader "zer0/Post-Processing/Blurs/Gaussian-Blur"
 {
     Properties
     {
