@@ -27,6 +27,7 @@ For more information, please refer to [Docs](Docs).
 - Skybox
     - Rotation
     - Exposure
+- Emission
 
 ## Big Targets
 - Implement the rendering of Genshin Impact!!
