@@ -24,6 +24,9 @@ For more information, please refer to [Docs](Docs).
         - Box blur
         - Motion blur
         - Depth of Field
+- Skybox
+    - Rotation
+    - Exposure
 
 ## Big Targets
 - Implement the rendering of Genshin Impact!!
