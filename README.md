@@ -24,6 +24,8 @@ For more information, please refer to [Docs](Docs).
         - Box blur
         - Motion blur
         - Depth of Field
+    - RGB Shift
+    - CRT Retro Effect
 - Skybox
     - Rotation
     - Exposure
