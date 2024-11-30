@@ -6,13 +6,15 @@
 ## News
 > [!Note]
 > 
-> In this section, recently implemented effects will be displayed, while some older implementations will be removed.
+> In this section, recently implemented ten effects will be displayed, while some older implementations will be removed.
 
-- [Cubemap-Renderer](Cubemap/Cubemap-Renderer.md)
-- [Skybox](Cubemap/Skybox.md)
-- [Grass](Animations/VertexAnimations/Grass.md)
-- [Outline](Outlines/)
-- [RampTexture](TexEffects/RampTexture.md)
-- [Grayscale](Post-Processing/Grayscale.md)
-- [GaussianBlur](Post-Processing/Blur/GaussianBlur.md)
-- [Bloom](Post-Processing/Bloom.md)
+1. [Cubemap-Renderer](Cubemap/Cubemap-Renderer.md)
+2. [Skybox](Cubemap/Skybox.md)
+3. [Grass](Animations/VertexAnimations/Grass.md)
+4. [Outline](Outlines/)
+5. [RampTexture](TexEffects/RampTexture.md)
+6. [Grayscale](Post-Processing/Grayscale.md)
+7. [GaussianBlur](Post-Processing/Blur/GaussianBlur.md)
+8. [Bloom](Post-Processing/Bloom.md)
+9. [Color Grading](Post-Processing/ColorGrading.md)
+10. Null

@@ -2,12 +2,12 @@
 
 > Unity 2022.3.25f1
 
-This project is a playground for Unity Rendering. Currently, the project is still using the Built-In Pipeline, but there are plans to transition to using the Scriptable Render Pipeline (SRP) in the future.
+This project is a playground for Unity Rendering. Currently, the project is still using the Built-In Pipeline, but there are plans to transition to using the Scriptable Render Pipeline(SRP) in the future.
 
 For more information, please refer to [Docs](Docs).
 
 ## Todo
-- Import SRP
+- Import URP
 - Shadows
 - Fog
 - Raytracing(Basic Path-Tracing)
@@ -18,7 +18,6 @@ For more information, please refer to [Docs](Docs).
 - Post-Processing Effect
     - Bloom
         - Based on HDR
-    - Color Adjustment
     - Tone Mapping
     - Blur
         - Box blur
