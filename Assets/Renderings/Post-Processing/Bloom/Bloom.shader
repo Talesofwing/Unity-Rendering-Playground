@@ -12,6 +12,8 @@ Shader "zer0/Post-Processing/Bloom"
         CGINCLUDE
 
         #include "UnityCG.cginc"
+        #include "Assets/_Common/Shaders/CGIncludes/Tools.cginc"
+
 
         struct appdata
         {
@@ -26,11 +28,6 @@ Shader "zer0/Post-Processing/Bloom"
         };
 
         sampler2D _MainTex;
-
-        fixed luminance(fixed3 color) 
-        {
-            return 0.2125 * color.r + 0.7154 * color.g + 0.0721 * color.b;
-        }
 
         fixed hard_threshold(fixed3 color, fixed threshold) 
         {

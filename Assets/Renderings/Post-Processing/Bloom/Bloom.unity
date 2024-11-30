@@ -233,7 +233,7 @@ MonoBehaviour:
   _luminanceCalculattionType: 1
   _blendType: 1
   _threshold: 0.5
-  _intensity: 1
+  _intensity: 2
   _slope: 1
   _knee: 0.8
   _iterations: 2
