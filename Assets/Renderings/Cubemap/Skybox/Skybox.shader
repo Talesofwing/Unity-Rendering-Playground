@@ -1,11 +1,15 @@
 Shader "zer0/Cubemap/Skybox" {
 
-    Properties {
+    Properties 
+    {
         _Tint ("Tint", Color) = (1, 1, 1, 1)
-		_Skybox ("Skybox", Cube) = "_Skybox" {}
+        _Exposure ("Exposure", Range(0, 8)) = 1
+        _Rotation ("Rotation", Range(0, 360)) = 0
+		[NoScaleOffset] _Cubemap ("Cubemap", Cube) = "_Cubemap" {}
     }
 
-    SubShader {
+    SubShader 
+    {
         Tags { "RenderType" = "Background" "Queue" = "Background" "PreviewType" = "Skybox" }
 
         Pass {
@@ -19,31 +23,42 @@ Shader "zer0/Cubemap/Skybox" {
 			#include "Lighting.cginc"
 			#include "AutoLight.cginc"
 
-            fixed4 _Tint;
-			samplerCUBE _Skybox;
+            float4 _Tint;
+			samplerCUBE _Cubemap;
+            float _Rotation;
+            float _Exposure;
 
-            struct a2v {
+            struct a2v 
+            {
                 float4 pos : POSITION;
             };
 
-            struct v2f {
+            struct v2f 
+            {
                 float4 pos : SV_POSITION;
-                float3 worldPos : TEXCOORD0;
+                float3 viewDir : TEXCOORD0;
             };
 
-            v2f vert (a2v i) {
+            v2f vert(a2v i) {
                 v2f o;
                 o.pos = UnityObjectToClipPos(i.pos);
-                o.worldPos = mul(unity_ObjectToWorld, i.pos).xyz;
+                o.viewDir = normalize(mul(unity_WorldToObject, float4(_WorldSpaceCameraPos,1)) - i.pos.xyz);
                 return o;
             }
 
-            fixed4 frag (v2f i) : SV_Target {
-                float3 camPos = _WorldSpaceCameraPos;
-                fixed3 viewDir = normalize(UnityWorldSpaceViewDir(i.worldPos));
-                fixed3 color = texCUBE(_Skybox, -viewDir) * _Tint;
+            float4 frag(v2f i) : SV_Target {
+                float rad = radians(_Rotation);
+                float c = cos(rad);
+                float s = sin(rad);
+                float3x3 rot = float3x3(
+                    c, 0, s,
+                    0, 1, 0,
+                    -s, 0, c
+                );
+                i.viewDir = mul(rot, i.viewDir);
+                float3 color = texCUBE(_Cubemap, -i.viewDir) * _Tint;
 
-                return fixed4 (color, 1.0);
+                return float4(color * _Exposure, 1.0);
             }
 
             ENDCG
