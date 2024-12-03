@@ -25,9 +25,6 @@ For more information, please refer to [Docs](Docs).
         - Depth of Field
     - RGB Shift
     - CRT Retro Effect
-- Skybox
-    - Rotation
-    - Exposure
 - Emission
 
 ## Big Targets
