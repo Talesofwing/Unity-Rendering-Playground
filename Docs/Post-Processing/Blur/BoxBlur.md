@@ -1,4 +1,4 @@
-# GaussianBlur
+# BoxBlur
 
 Box blur is a convolution operation with uniform weighting. In this example, a 5x5 kernel is used. The convolution filter is as follows:
 
