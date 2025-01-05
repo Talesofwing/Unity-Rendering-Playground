@@ -62,7 +62,7 @@ Shader "zer0/Post-Processing/Blurs/Gaussian-Blur"
                 o.uv[1] = uv + float2(0.0, _MainTex_TexelSize.y * 1.0) * _VerticalBlurSize;
                 o.uv[2] = uv - float2(0.0, _MainTex_TexelSize.y * 1.0) * _VerticalBlurSize;
                 o.uv[3] = uv + float2(0.0, _MainTex_TexelSize.y * 2.0) * _VerticalBlurSize;
-                o.uv[4] = uv - float2(0.0, _MainTex_TexelSize.y * 1.0) * _VerticalBlurSize;
+                o.uv[4] = uv - float2(0.0, _MainTex_TexelSize.y * 2.0) * _VerticalBlurSize;
                 return o;
             }
 
