@@ -20,7 +20,7 @@ For more information, please refer to [Docs](Docs).
         - Based on HDR
     - Tone Mapping
     - Blur
-        - Box blur
+        - ~~Box blur~~
         - Motion blur
         - Depth of Field
     - RGB Shift

@@ -224,10 +224,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 31990620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e82e75bb1ab8543bc5246f95ba25c3, type: 3}
+  m_Script: {fileID: 11500000, guid: b9024376dc1e439498167dd9a258f2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shader: {fileID: 4800000, guid: 29e1feb1de6701442817cd194c1fea1c, type: 3}
+  _shader: {fileID: 4800000, guid: 0c2b2166d635f4d47bbef8cde3bd8e25, type: 3}
   _iterations: 2
   _downSample: 1
   _horizontalBlurSize: 5
@@ -380,7 +380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6101589553479225933, guid: b060d459ab203b540b70d697de1d7762, type: 3}
       propertyPath: m_text
-      value: '- Gaussian Blur -'
+      value: '- Box Blur -'
       objectReference: {fileID: 0}
     - target: {fileID: 9159887332053112324, guid: b060d459ab203b540b70d697de1d7762, type: 3}
       propertyPath: m_Name
