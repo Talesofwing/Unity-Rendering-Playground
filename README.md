@@ -1,6 +1,6 @@
 # Unity-Rendering-Playground
 
-> Unity 2022.3.25f1
+> Unity 2022.3.36f1
 
 This project is a playground for Unity Rendering. Currently, the project is still using the Built-In Pipeline, but there are plans to transition to using the Scriptable Render Pipeline(SRP) in the future.
 
