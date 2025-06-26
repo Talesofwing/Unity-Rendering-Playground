@@ -1,5 +1,9 @@
 # Logs
 
+#### 2025/06/26
+- Implement `Matcap`
+- Import `teapot` model.
+
 #### 2024/11/12
 - Add the `DefaultScene`, which is used to showcase various rendering effects.
 - Import a few plugins.

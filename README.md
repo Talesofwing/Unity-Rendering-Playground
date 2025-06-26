@@ -8,10 +8,12 @@ For more information, please refer to [Docs](Docs).
 
 ## Todo
 - Import URP
+- Custom SRP
 - Shadows
 - Fog
 - Raytracing(Basic Path-Tracing)
 - PBR Material
+- Toon Shading
 
 ## Doing
 - Outlines
