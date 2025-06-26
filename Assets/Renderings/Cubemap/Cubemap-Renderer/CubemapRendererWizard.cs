@@ -135,7 +135,7 @@ public class CubemapRendererWizard : ScriptableWizard
         return rt;
     }
 
-    [MenuItem("zer0/Cubemap/Cubemap Renderer")]
+    [MenuItem("zer0/Renderer/Cubemap Renderer")]
     private static void RenderCubemap()
     {
         ScriptableWizard.DisplayWizard<CubemapRendererWizard>("Cubemap Renderer", "Render");
